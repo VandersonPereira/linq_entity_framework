@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.01", "Estudo.LinqEF.01\Estudo.LinqEF.01.csproj", "{C2CADDFA-EF68-47D2-8826-3954916DED96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqToObject", "Estudo.LinqToObject\Estudo.LinqToObject.csproj", "{E1D10FC3-047D-4ABE-B9AF-AED9055B4982}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C2CADDFA-EF68-47D2-8826-3954916DED96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2CADDFA-EF68-47D2-8826-3954916DED96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2CADDFA-EF68-47D2-8826-3954916DED96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D10FC3-047D-4ABE-B9AF-AED9055B4982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D10FC3-047D-4ABE-B9AF-AED9055B4982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D10FC3-047D-4ABE-B9AF-AED9055B4982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D10FC3-047D-4ABE-B9AF-AED9055B4982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
