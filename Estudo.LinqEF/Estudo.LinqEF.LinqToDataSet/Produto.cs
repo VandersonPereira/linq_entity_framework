@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Estudo.LinqEF.LinqToXml
+namespace Estudo.LinqEF.LinqToDataSet
 {
-    public class Contato
+    public class Produto
     {
+        public int Id { get; set; }
+
         public string Nome { get; set; }
 
-        public Endereco Endereco { get; set; }
+        public string Numero { get; set; }
     }
 }

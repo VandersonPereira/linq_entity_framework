@@ -1,0 +1,7 @@
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\bin\Debug\Estudo.LinqEF.LinqToDataSet.exe.config
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\bin\Debug\Estudo.LinqEF.LinqToDataSet.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\bin\Debug\Estudo.LinqEF.LinqToDataSet.pdb
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\obj\Debug\Estudo.LinqEF.LinqToDataSet.csprojAssemblyReference.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\obj\Debug\Estudo.LinqEF.LinqToDataSet.csproj.CoreCompileInputs.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\obj\Debug\Estudo.LinqEF.LinqToDataSet.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToDataSet\obj\Debug\Estudo.LinqEF.LinqToDataSet.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Estudo.LinqToXml
+namespace Estudo.LinqEF.LinqToXml
 {
     public class Endereco
     {

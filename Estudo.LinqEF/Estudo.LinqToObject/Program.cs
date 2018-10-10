@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Estudo.LinqToObject
+namespace Estudo.LinqEF.LinqToObject
 {
     class Program
     {
