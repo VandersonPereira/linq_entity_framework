@@ -1,0 +1,7 @@
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\bin\Debug\Estudo.LinqEF.LinqToSQL.Transaction.exe.config
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\bin\Debug\Estudo.LinqEF.LinqToSQL.Transaction.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\bin\Debug\Estudo.LinqEF.LinqToSQL.Transaction.pdb
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\obj\Debug\Estudo.LinqEF.LinqToSQL.Transaction.csprojAssemblyReference.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\obj\Debug\Estudo.LinqEF.LinqToSQL.Transaction.csproj.CoreCompileInputs.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\obj\Debug\Estudo.LinqEF.LinqToSQL.Transaction.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL.Transaction\obj\Debug\Estudo.LinqEF.LinqToSQL.Transaction.pdb

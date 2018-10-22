@@ -1,0 +1,7 @@
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\bin\Debug\Estudo.LinqEF.LinqToSQL.exe.config
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\bin\Debug\Estudo.LinqEF.LinqToSQL.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\bin\Debug\Estudo.LinqEF.LinqToSQL.pdb
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\obj\Debug\Estudo.LinqEF.LinqToSQL.csprojAssemblyReference.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\obj\Debug\Estudo.LinqEF.LinqToSQL.csproj.CoreCompileInputs.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\obj\Debug\Estudo.LinqEF.LinqToSQL.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.LinqToSQL\obj\Debug\Estudo.LinqEF.LinqToSQL.pdb

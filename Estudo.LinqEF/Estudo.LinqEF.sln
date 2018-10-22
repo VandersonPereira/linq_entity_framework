@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.LinqToXml", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.LinqToDataSet", "Estudo.LinqEF.LinqToDataSet\Estudo.LinqEF.LinqToDataSet.csproj", "{67185AF3-96AA-4083-B8E1-5BB4C933C689}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.LinqToSQL", "Estudo.LinqEF.LinqToSQL\Estudo.LinqEF.LinqToSQL.csproj", "{9416FA49-57D7-4076-A781-879A04785477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.LinqToSQL.Transaction", "Estudo.LinqEF.LinqToSQL.Transaction\Estudo.LinqEF.LinqToSQL.Transaction.csproj", "{165098C0-2D80-42AB-AB6D-EB5734639306}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{67185AF3-96AA-4083-B8E1-5BB4C933C689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67185AF3-96AA-4083-B8E1-5BB4C933C689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67185AF3-96AA-4083-B8E1-5BB4C933C689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9416FA49-57D7-4076-A781-879A04785477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9416FA49-57D7-4076-A781-879A04785477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9416FA49-57D7-4076-A781-879A04785477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9416FA49-57D7-4076-A781-879A04785477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{165098C0-2D80-42AB-AB6D-EB5734639306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{165098C0-2D80-42AB-AB6D-EB5734639306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{165098C0-2D80-42AB-AB6D-EB5734639306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{165098C0-2D80-42AB-AB6D-EB5734639306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

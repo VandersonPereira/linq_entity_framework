@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AdventureWorks2012" Class="AdventureWorksByToolDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=AdventureWorks2012;Persist Security Info=True;User ID=sa" SettingsObjectName="Estudo.LinqEF.LinqToSQL.Transaction.Properties.Settings" SettingsPropertyName="AdventureWorks2012ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Production.ProductCategory" Member="ProductCategories">
+    <Type Name="ProductCategory">
+      <Column Name="ProductCategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ProductCategory_ProductSubcategory" Member="ProductSubcategories" ThisKey="ProductCategoryID" OtherKey="ProductCategoryID" Type="ProductSubcategory" />
+    </Type>
+  </Table>
+  <Table Name="Production.ProductSubcategory" Member="ProductSubcategories">
+    <Type Name="ProductSubcategory">
+      <Column Name="ProductSubcategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ProductCategory_ProductSubcategory" Member="ProductCategory" ThisKey="ProductCategoryID" OtherKey="ProductCategoryID" Type="ProductCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

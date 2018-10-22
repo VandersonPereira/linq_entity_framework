@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AdventureWorks2012" Class="AdventureWorksByToolDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=AdventureWorks2012;Persist Security Info=True;User ID=sa" SettingsObjectName="Estudo.LinqEF.LinqToSQL.Properties.Settings" SettingsPropertyName="AdventureWorks2012ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Production.ProductCategory" Member="ProductCategories">
+    <Type Name="ProductCategory" Id="ID1">
+      <Column Name="ProductCategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ProductCategory_ProductSubcategory" Member="ProductSubcategories" ThisKey="ProductCategoryID" OtherKey="ProductCategoryID" Type="ProductSubcategory" />
+    </Type>
+  </Table>
+  <Table Name="Production.ProductSubcategory" Member="ProductSubcategories">
+    <Type Name="ProductSubcategory" Id="ID2">
+      <Column Name="ProductSubcategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ProductCategory_ProductSubcategory" Member="ProductCategory" ThisKey="ProductCategoryID" OtherKey="ProductCategoryID" Type="ProductCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.usp_GetCategory" Method="usp_GetCategory">
+    <Parameter Name="resultType" Type="System.Int32" DbType="Int" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.ufnFindProductSubcategoriesByName" Method="FindProductSubcategoriesByName" IsComposable="true">
+    <Parameter Name="name" Type="System.String" DbType="NVarChar(MAX)" />
+    <ElementType IdRef="ID2" />
+  </Function>
+  <Function Name="dbo.ufnGetMaxPriceBySubcategory" Method="GetMaxPriceBySubcategory" IsComposable="true">
+    <Parameter Name="productSubcategoryID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Decimal" />
+  </Function>
+</Database>

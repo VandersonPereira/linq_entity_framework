@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AdventureWorksByTool">
+  <DataContextMoniker Name="/AdventureWorksByToolDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b46d6edd-2997-46d4-a27a-311ed5c03908" absoluteBounds="0.75, 1, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/AdventureWorksByToolDataContext/ProductCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="929d013b-020e-4317-abde-baa45c2988a5" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc30b44d-d8e2-4631-b1ef-7673031ddc1a" absoluteBounds="3.5, 0.875, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/AdventureWorksByToolDataContext/ProductSubcategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a35202a5-741b-4580-97b2-faa31dba8fcd" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.78929768880208); (3.5 : 1.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AdventureWorksByToolDataContext/ProductCategory/ProductCategory_ProductSubcategory" />
+      <nodes>
+        <classShapeMoniker Id="b46d6edd-2997-46d4-a27a-311ed5c03908" />
+        <classShapeMoniker Id="cc30b44d-d8e2-4631-b1ef-7673031ddc1a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
