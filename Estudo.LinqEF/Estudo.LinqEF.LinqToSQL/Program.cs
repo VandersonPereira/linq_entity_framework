@@ -201,10 +201,6 @@ namespace Estudo.LinqEF.LinqToSQL
             Console.WriteLine("-------------------------------------------------");
 
             #region Executando consultas diretas
-
-            #endregion
-
-            Console.WriteLine("-------------------------------------------------");
             AdventureWorksByToolDataContext dcDiretas = new AdventureWorksByToolDataContext();
 
             var resultDiretas = dcDiretas.ExecuteQuery<ProductSubcategory>(@"SELECT TOP(50)PERCENT ProductSubcategoryID, Name, rowguid, ModifiedDate FROM Production.ProductSubcategory");
@@ -214,6 +210,10 @@ namespace Estudo.LinqEF.LinqToSQL
             {
                 Console.WriteLine("{0} - {1}", item.ProductSubcategoryID, item.Name);
             }
+            #endregion
+
+            Console.WriteLine("-------------------------------------------------");
+
             Console.ReadKey();
         }
 

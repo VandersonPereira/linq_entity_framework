@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MinhaBase.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MinhaBaseStoreContainer">
+    <EntitySet Name="Clientes" EntityType="MinhaBase.Store.Clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComprasSet" EntityType="MinhaBase.Store.ComprasSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ClienteCompras" Association="MinhaBase.Store.ClienteCompras">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Compras" EntitySet="ComprasSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ClienteId" />
+    </Key>
+    <Property Name="ClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComprasSet">
+    <Key>
+      <PropertyRef Name="CompraId" />
+    </Key>
+    <Property Name="CompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataCompra" Type="datetime" Nullable="false" />
+    <Property Name="Valor" Type="decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="ClienteClienteId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteCompras">
+    <End Role="Cliente" Type="MinhaBase.Store.Clientes" Multiplicity="1" />
+    <End Role="Compras" Type="MinhaBase.Store.ComprasSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Compras">
+        <PropertyRef Name="ClienteClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

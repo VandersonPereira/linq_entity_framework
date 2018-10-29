@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MinhaBase" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="MinhaBaseContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="MinhaBase.Cliente" />
+    <EntitySet Name="ComprasSet" EntityType="MinhaBase.Compras" />
+    <AssociationSet Name="ClienteCompras" Association="MinhaBase.ClienteCompras">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Compras" EntitySet="ComprasSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ClienteId" />
+    </Key>
+    <Property Name="ClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" />
+    <NavigationProperty Name="Compras" Relationship="MinhaBase.ClienteCompras" FromRole="Cliente" ToRole="Compras" />
+  </EntityType>
+  <EntityType Name="Compras">
+    <Key>
+      <PropertyRef Name="CompraId" />
+    </Key>
+    <Property Name="CompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataCompra" Type="DateTime" Nullable="false" />
+    <Property Name="Valor" Type="Decimal" Nullable="false" Precision="15" Scale="2" />
+    <NavigationProperty Name="Cliente" Relationship="MinhaBase.ClienteCompras" FromRole="Compras" ToRole="Cliente" />
+    <Property Name="ClienteClienteId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteCompras">
+    <End Type="MinhaBase.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="MinhaBase.Compras" Role="Compras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Compras">
+        <PropertyRef Name="ClienteClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

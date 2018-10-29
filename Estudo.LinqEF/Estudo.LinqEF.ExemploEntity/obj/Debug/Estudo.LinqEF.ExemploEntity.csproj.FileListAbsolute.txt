@@ -1,0 +1,13 @@
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\bin\Debug\Estudo.LinqEF.ExemploEntity.exe.config
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\bin\Debug\Estudo.LinqEF.ExemploEntity.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\bin\Debug\Estudo.LinqEF.ExemploEntity.pdb
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\bin\Debug\EntityFramework.dll
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\bin\Debug\EntityFramework.xml
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.csprojAssemblyReference.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.csproj.CoreCompileInputs.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.csproj.CopyComplete
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.pdb
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.Migrations.InitialCreate.resources
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.csproj.GenerateResource.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntity\obj\Debug\Estudo.LinqEF.ExemploEntity.Migrations.AlteracaoFucnionario.resources

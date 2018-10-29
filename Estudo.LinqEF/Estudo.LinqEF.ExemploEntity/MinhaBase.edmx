@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MinhaBase.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MinhaBaseStoreContainer">
+    <EntitySet Name="Clientes" EntityType="MinhaBase.Store.Clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComprasSet" EntityType="MinhaBase.Store.ComprasSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ClienteCompras" Association="MinhaBase.Store.ClienteCompras">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Compras" EntitySet="ComprasSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ClienteId" />
+    </Key>
+    <Property Name="ClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComprasSet">
+    <Key>
+      <PropertyRef Name="CompraId" />
+    </Key>
+    <Property Name="CompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataCompra" Type="datetime" Nullable="false" />
+    <Property Name="Valor" Type="decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="ClienteClienteId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteCompras">
+    <End Role="Cliente" Type="MinhaBase.Store.Clientes" Multiplicity="1" />
+    <End Role="Compras" Type="MinhaBase.Store.ComprasSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Compras">
+        <PropertyRef Name="ClienteClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MinhaBase" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MinhaBaseContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="MinhaBase.Cliente" />
+          <EntitySet Name="ComprasSet" EntityType="MinhaBase.Compras" />
+          <AssociationSet Name="ClienteCompras" Association="MinhaBase.ClienteCompras">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="Compras" EntitySet="ComprasSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="ClienteId" />
+          </Key>
+          <Property Name="ClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" />
+          <NavigationProperty Name="Compras" Relationship="MinhaBase.ClienteCompras" FromRole="Cliente" ToRole="Compras" />
+        </EntityType>
+        <EntityType Name="Compras">
+          <Key>
+            <PropertyRef Name="CompraId" />
+          </Key>
+          <Property Name="CompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DataCompra" Type="DateTime" Nullable="false" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" Precision="15" Scale="2" />
+          <NavigationProperty Name="Cliente" Relationship="MinhaBase.ClienteCompras" FromRole="Compras" ToRole="Cliente" />
+          <Property Name="ClienteClienteId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="ClienteCompras">
+          <End Type="MinhaBase.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="MinhaBase.Compras" Role="Compras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Compras">
+              <PropertyRef Name="ClienteClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MinhaBaseStoreContainer" CdmEntityContainer="MinhaBaseContainer">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="IsTypeOf(MinhaBase.Cliente)">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComprasSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MinhaBase.Compras)">
+        <MappingFragment StoreEntitySet="ComprasSet">
+          <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+          <ScalarProperty Name="DataCompra" ColumnName="DataCompra" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="ClienteClienteId" ColumnName="ClienteClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
