@@ -1,0 +1,10 @@
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\bin\Debug\Estudo.LinqEF.ExemploEntityQuery.exe.config
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\bin\Debug\Estudo.LinqEF.ExemploEntityQuery.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\bin\Debug\Estudo.LinqEF.ExemploEntityQuery.pdb
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\bin\Debug\EntityFramework.dll
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\bin\Debug\EntityFramework.xml
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\obj\Debug\Estudo.LinqEF.ExemploEntityQuery.csprojAssemblyReference.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\obj\Debug\Estudo.LinqEF.ExemploEntityQuery.csproj.CoreCompileInputs.cache
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\obj\Debug\Estudo.LinqEF.ExemploEntityQuery.csproj.CopyComplete
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\obj\Debug\Estudo.LinqEF.ExemploEntityQuery.exe
+C:\Users\vanderson.pereira\source\repos\linq_entity_framework\Estudo.LinqEF\Estudo.LinqEF.ExemploEntityQuery\obj\Debug\Estudo.LinqEF.ExemploEntityQuery.pdb

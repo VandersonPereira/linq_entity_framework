@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.LinqToSQL.Tra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.ExemploEntity", "Estudo.LinqEF.ExemploEntity\Estudo.LinqEF.ExemploEntity.csproj", "{5429B6C5-8FCB-4B27-8E8E-78515F457495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.LinqEF.ExemploEntityQuery", "Estudo.LinqEF.ExemploEntityQuery\Estudo.LinqEF.ExemploEntityQuery.csproj", "{CBE48C75-BBC3-4F93-A699-4D9D4C3E6A42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5429B6C5-8FCB-4B27-8E8E-78515F457495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5429B6C5-8FCB-4B27-8E8E-78515F457495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5429B6C5-8FCB-4B27-8E8E-78515F457495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE48C75-BBC3-4F93-A699-4D9D4C3E6A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE48C75-BBC3-4F93-A699-4D9D4C3E6A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE48C75-BBC3-4F93-A699-4D9D4C3E6A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE48C75-BBC3-4F93-A699-4D9D4C3E6A42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
